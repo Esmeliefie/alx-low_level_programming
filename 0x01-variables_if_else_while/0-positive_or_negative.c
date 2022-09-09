@@ -5,7 +5,7 @@
 /**
  * main - assign a a randon number var n
  * execute and print it
- * return: Always 0 (successful)
+ * Return: Always 0 (success)
  */
 
 int main(void)
