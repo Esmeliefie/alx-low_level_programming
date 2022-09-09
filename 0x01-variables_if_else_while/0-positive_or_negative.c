@@ -5,26 +5,22 @@
 /**
  * main - assign a a randon number var n
  * execute and print it
- * return: 0 always (successful)
+ * return: Always 0 (successful)
  */
 
 int main(void)
 {
-	int n;
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	
-	if (n > 0) 
-	{
-		printf("%d is positive\n", n);
-	}
-	else if (n == 0)
-	{
-		printf("%d is zero\n", n);
-	}
-	else if(n < 0) 
-	{
-		printf("%d is negative\n", n);
-	}
-	return (0);
+int n;
+
+srand(time(0));
+n = rand() - RAND_MAX / 2;
+if (n > 0)
+	printf("%d is positive\n", n);
+else if (n == 0)
+	printf("%d is zero\n", n);
+else if (n < 0)
+{
+	printf("%d is negative\n", n);
+}
+return (0);
 }
